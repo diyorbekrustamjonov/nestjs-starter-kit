@@ -1,0 +1,14 @@
+{
+    "name": "typescript-template",
+    "namespace": "TYPESCRIPT_TEMPLATE",
+    "script": "build/index.js",
+    "interpreter": "node@16.19.1",
+    "log_date_format": "YYYY-MM-DD HH:MM Z",
+    "log_file": "/server/.logs/typescript-template.log",
+    "out_file": "/server/.logs/typescript-template-out.log",
+    "error_file": "/server/.logs/typescript-template-error.log",
+    "autorestart": true,
+    "env": {
+        "NODE_ENV": "production"
+    }
+}

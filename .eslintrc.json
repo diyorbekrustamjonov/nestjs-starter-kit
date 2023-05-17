@@ -1,0 +1,69 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "parserOptions": {
+        "project": "./tsconfig.eslint.json"
+    },
+    "extends": [
+        "prettier"
+    ],
+    "rules": {
+        "@typescript-eslint/no-namespace": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "warn",
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "lf"
+            }
+        ],
+        "@typescript-eslint/ban-ts-comment": "warn",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/no-empty-function": "off",
+        "prefer-const": "warn",
+        "@typescript-eslint/member-ordering": [
+            "off",
+            {
+                "default": {
+                    "memberTypes": [
+                        "public-static-field",
+                        "protected-static-field",
+                        "private-static-field",
+                        "public-instance-field",
+                        "protected-instance-field",
+                        "private-instance-field",
+                        "constructor",
+                        "public-instance-method",
+                        "protected-instance-method",
+                        "private-instance-method",
+                        "public-static-method",
+                        "protected-static-method",
+                        "private-static-method"
+                    ]
+                },
+                "classes": {
+                    "order": "alphabetically"
+                }
+            }
+        ],
+        "no-console": "off"
+    },
+    "overrides": [
+        {
+            "files": [
+                "*.ts",
+                "*.tsx"
+            ],
+            "rules": {
+                "@typescript-eslint/no-namespace": "off",
+                "@typescript-eslint/explicit-function-return-type": [
+                    "error"
+                ],
+                "@typescript-eslint/adjacent-overload-signatures": "off"
+            }
+        }
+    ]
+}

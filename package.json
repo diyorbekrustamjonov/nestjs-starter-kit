@@ -1,0 +1,87 @@
+{
+  "name": "example-template-typescript",
+  "version": "1.0.0",
+  "description": "Example Template for TypeScript projects",
+  "main": "index.js",
+  "scripts": {
+    "build": "del-cli -rf build && tsc && tsc-alias",
+    "start": "node build/index.js",
+    "lint:tslint": "tslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "lint:prettier": "prettier --write \"src/**/*.ts\"",
+    "test": "jest",
+    "coverage": "nyc npm run test"
+  },
+  "engines": {
+    "node": "16.19.1",
+    "npm": "8.19.3"
+  },
+  "keywords": [
+    "typescript",
+    "template",
+    "example",
+    "eslint",
+    "prettier",
+    "jest",
+    "ts-jest",
+    "ts-node"
+  ],
+  "author": {
+    "name": "Diyorbek Rustamjonov",
+    "email": "drustamjonov0919@gmail.com",
+    "url": "https://diyorbek.ru"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
+  },
+  "nyc": {
+    "extends": "@istanbuljs/nyc-config-typescript",
+    "extension": [
+      ".ts"
+    ],
+    "exclude": [
+      "**/*.d.ts",
+      "**/test/**/*",
+      "**/*.js",
+      "**/config.ts",
+      "./coverage"
+    ],
+    "excludeNodeModules": true,
+    "reporter": [
+      "text",
+      "lcov"
+    ],
+    "all": true
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "reflect-metadata": "^0.1.13",
+    "tslib": "^2.3.1",
+    "tslog": "3.3.2"
+  },
+  "devDependencies": {
+    "@types/eslint-plugin-prettier": "^3.1.0",
+    "@types/node": "18.11.18",
+    "@types/source-map-support": "^0.5.4",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "del-cli": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.5.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.3.2",
+    "source-map-support": "^0.5.20",
+    "ts-jest": "^29.1.0",
+    "ts-loader": "^9.2.3",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.6",
+    "tsconfig-paths": "4.1.1",
+    "typescript": "^4.9.5"
+  },
+  "license": "MIT"
+}

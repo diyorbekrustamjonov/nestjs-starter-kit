@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "declaration": true,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "es2022",
+        "sourceMap": true,
+        "outDir": "./build",
+        "baseUrl": "./",
+        "incremental": true,
+        "skipLibCheck": true,
+        "strictNullChecks": false,
+        "noImplicitAny": false,
+        "strictBindCallApply": false,
+        "forceConsistentCasingInFileNames": false,
+        "noFallthroughCasesInSwitch": false,
+        "lib": [
+            "es7"
+        ],
+        "types": [
+            "node",
+            "reflect-metadata"
+        ],
+        "paths": {
+            "modules/*": [
+                "src/modules/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.js"
+    ],
+    "exclude": [
+        "node_modules",
+        "coverage",
+        "**/*.spec.ts"
+    ],
+    "paths": {
+        "*": [
+            "types/*"
+        ]
+    }
+}

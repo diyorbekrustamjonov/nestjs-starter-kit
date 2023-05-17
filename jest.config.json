@@ -1,0 +1,45 @@
+{
+    "roots": [
+        "<rootDir>"
+    ],
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "transform": {
+        "^.+\\.ts?$": "ts-jest"
+    },
+    "modulePaths": [
+        "<rootDir>/node_modules",
+        "<rootDir>/src"
+    ],
+    "testMatch": [
+        "**/?(*.)+(spec|test).[tj]s?(x)"
+    ],
+    "moduleNameMapper": {
+        "^src/(.*)$": "<rootDir>/src/$1"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+        "src/**/*.{ts,tsx}"
+    ],
+    "coveragePathIgnorePatterns": [
+        "<rootDir>/node_modules"
+    ],
+    "coverageReporters": [
+        "json",
+        "lcov",
+        "text"
+    ],
+    "coverageThreshold": {
+        "global": {
+            "branches": 100,
+            "functions": 100,
+            "lines": 100,
+            "statements": 100
+        }
+    },
+    "moduleFileExtensions": [
+        "ts",
+        "js",
+        "json"
+    ]
+}
