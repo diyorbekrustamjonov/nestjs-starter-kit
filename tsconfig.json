@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "declaration": true,
         "removeComments": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
@@ -25,9 +24,18 @@
             "reflect-metadata"
         ],
         "paths": {
+            "common/*": [
+                "src/common/*"
+            ],
+            "core/*": [
+                "src/core/*"
+            ],
             "modules/*": [
                 "src/modules/*"
-            ]
+            ],
+            "shared/*": [
+                "src/core/shared/*"
+            ],
         }
     },
     "include": [
