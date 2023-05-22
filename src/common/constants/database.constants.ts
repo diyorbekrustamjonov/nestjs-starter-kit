@@ -1,0 +1,2 @@
+export const DATABASE_CONNECTION = 'DATABASE_CONNECTION';
+export const ROLE_MODEL = 'ROLE_MODEL';
