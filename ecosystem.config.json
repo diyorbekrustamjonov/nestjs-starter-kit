@@ -1,12 +1,12 @@
 {
-    "name": "typescript-template",
-    "namespace": "TYPESCRIPT_TEMPLATE",
+    "name": "nestjs-starter-kit",
+    "namespace": "NESTJS-STARTER-KIT",
     "script": "build/index.js",
     "interpreter": "node@16.19.1",
     "log_date_format": "YYYY-MM-DD HH:MM Z",
-    "log_file": "/server/.logs/typescript-template.log",
-    "out_file": "/server/.logs/typescript-template-out.log",
-    "error_file": "/server/.logs/typescript-template-error.log",
+    "log_file": "/server/.logs/nestjs-starter-kit.log",
+    "out_file": "/server/.logs/nestjs-starter-kit-out.log",
+    "error_file": "/server/.logs/nestjs-starter-kit-error.log",
     "autorestart": true,
     "env": {
         "NODE_ENV": "production"
