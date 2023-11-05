@@ -17,7 +17,7 @@
         "prettier/prettier": [
             "error",
             {
-                "endOfLine": "crlf"
+                "endOfLine": "auto"
             }
         ],
         "@typescript-eslint/ban-ts-comment": "warn",
