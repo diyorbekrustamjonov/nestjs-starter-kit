@@ -10,7 +10,7 @@ import helmet from 'helmet';
 import * as App from 'src/app.module';
 import * as Logger from 'common/logger';
 import * as Interceptors from 'common/interceptors/transform.interceptor';
-import * as Configs from 'src/components/config';
+import * as Configs from './components/config/impl/modules';
 import * as console from 'console';
 
 !(async function (): Promise<void> {

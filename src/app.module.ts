@@ -7,7 +7,7 @@ import * as Multer from 'multer';
 
 import * as Modules from 'src/modules';
 import * as Logger from 'common/logger';
-import * as Configs from 'src/components/config';
+import * as Configs from './components/config/impl/modules';
 import * as Databases from 'core/shared/database/mongodb/mongodb.module';
 
 @NestCommon.Module({

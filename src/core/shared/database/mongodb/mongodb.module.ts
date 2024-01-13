@@ -4,7 +4,7 @@ import * as NestMongoose from '@nestjs/mongoose';
 
 import * as Mongoose from 'mongoose';
 import * as MongooseSlugUpdater from 'mongoose-slug-updater';
-import * as Configs from 'src/components/config';
+import * as Configs from '../../../../components/config/impl/modules';
 
 @NestCommon.Module({
   imports: [

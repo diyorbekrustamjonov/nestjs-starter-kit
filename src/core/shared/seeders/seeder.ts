@@ -1,7 +1,7 @@
 import * as NestSeeder from 'nestjs-seeder';
 import * as NestMongoose from '@nestjs/mongoose';
 import * as NestConfig from '@nestjs/config';
-import * as Configs from 'src/components/config';
+import * as Configs from '../../../components/config/impl/modules';
 
 import * as Mocks from 'shared/seeders/mocks';
 import * as Schemas from 'core/schemas';
